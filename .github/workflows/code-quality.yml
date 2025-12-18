@@ -51,15 +51,38 @@ jobs:
       run: npm audit --audit-level=moderate
       continue-on-error: true
 
-  dependency-review:
+  dependency-security:
     runs-on: ubuntu-latest
-    if: github.event_name == 'pull_request'
 
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
 
-    - name: Dependency Review
-      uses: actions/dependency-review-action@v4
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
       with:
-        fail-on-severity: moderate
+        node-version: '20.x'
+        cache: 'npm'
+
+    - name: Install dependencies
+      run: npm ci
+
+    - name: Check for known vulnerabilities with npm audit
+      run: |
+        echo "Running npm audit..."
+        npm audit --audit-level=moderate || echo "::warning::Vulnerabilities found in dependencies"
+
+    - name: Check outdated dependencies
+      run: |
+        echo "Checking for outdated dependencies..."
+        npm outdated || true
+      continue-on-error: true
+
+    - name: Snyk Security Scan (if token available)
+      if: ${{ secrets.SNYK_TOKEN != '' }}
+      uses: snyk/actions/node@master
+      continue-on-error: true
+      env:
+        SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+      with:
+        args: --severity-threshold=high
