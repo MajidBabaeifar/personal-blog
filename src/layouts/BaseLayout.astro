@@ -30,7 +30,6 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
   <title>{title}</title>
   <meta name="description" content={description} />
   <link rel="canonical" href={canonicalURL} />
-  <link rel="alternate" type="application/rss+xml" title="Majid Babaeifar Blog" href="/rss.xml" />
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content={article ? 'article' : 'website'} />
@@ -58,7 +57,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
         <div class="flex items-center justify-between">
           <a href="/" class="text-xl font-bold hover:no-underline">Majid Babaeifar</a>
           <div class="flex gap-6">
-            <a href="/" class="hover:text-[var(--color-accent)]">Blog</a>
+            <a href="/" class="hover:text-[var(--color-accent)]">Home</a>
             <a href="/about" class="hover:text-[var(--color-accent)]">About</a>
             <a href="/contact" class="hover:text-[var(--color-accent)]">Contact</a>
           </div>
