@@ -55,17 +55,20 @@ A minimal, fast, and SEO-friendly personal blog built with Astro and Tailwind CS
 ### Installation
 
 1. Clone the repository:
+
 ```bash
 git clone <your-repo-url>
 cd me-personal-blog
 ```
 
 2. Install dependencies:
+
 ```bash
 npm install
 ```
 
 3. Start the development server:
+
 ```bash
 npm run dev
 ```
@@ -74,13 +77,13 @@ npm run dev
 
 ## Available Commands
 
-| Command | Action |
-|---------|--------|
-| `npm install` | Install dependencies |
-| `npm run dev` | Start dev server at `localhost:4321` |
-| `npm run build` | Build production site to `./dist/` |
-| `npm run preview` | Preview build locally before deploying |
-| `npm run astro ...` | Run Astro CLI commands |
+| Command             | Action                                 |
+| ------------------- | -------------------------------------- |
+| `npm install`       | Install dependencies                   |
+| `npm run dev`       | Start dev server at `localhost:4321`   |
+| `npm run build`     | Build production site to `./dist/`     |
+| `npm run preview`   | Preview build locally before deploying |
+| `npm run astro ...` | Run Astro CLI commands                 |
 
 ## Writing Blog Posts
 
@@ -94,10 +97,10 @@ src/content/blog/my-new-post.md
 
 ```markdown
 ---
-title: "My New Post"
-description: "A brief description of my post"
+title: 'My New Post'
+description: 'A brief description of my post'
 pubDate: 2024-12-18
-tags: ["javascript", "web-dev"]
+tags: ['javascript', 'web-dev']
 draft: false
 ---
 
@@ -176,6 +179,7 @@ MIT
 ## Author
 
 **Majid Babaeifar**
+
 - Email: majidbabaeifar@gmail.com
 - LinkedIn: [linkedin.com/in/majidbabaeifar](https://linkedin.com/in/majidbabaeifar)
 - Location: Bamberg, Germany

@@ -3,9 +3,11 @@
 ## Changes Made
 
 ### 1. Domain Update ✅
+
 Updated the site URL from `majidbabaeifar.com` to `majidbabaeifar.vercel.app`
 
 **Files changed:**
+
 - `astro.config.mjs` - Updated site URL
 - `public/robots.txt` - Updated sitemap URL
 
@@ -16,19 +18,23 @@ Updated the site URL from `majidbabaeifar.com` to `majidbabaeifar.vercel.app`
 Created 4 automated workflows that run on every push and pull request:
 
 ### Workflow 1: CI Pipeline (`.github/workflows/ci.yml`)
+
 **Purpose:** Build and type-check the project
 
 **Runs on:**
+
 - Every push to master/main
 - Every pull request
 
 **What it does:**
+
 - ✅ Tests on Node.js 18.x and 20.x
 - ✅ Runs `astro check` for TypeScript errors
 - ✅ Builds the project with `npm run build`
 - ✅ Uploads build artifacts
 
 **Benefits:**
+
 - Catches TypeScript errors before deployment
 - Ensures the project builds successfully
 - Tests across multiple Node versions
@@ -36,19 +42,23 @@ Created 4 automated workflows that run on every push and pull request:
 ---
 
 ### Workflow 2: Code Quality (`.github/workflows/code-quality.yml`)
+
 **Purpose:** Maintain code quality and security
 
 **Runs on:**
+
 - Every push to master/main
 - Every pull request
 
 **What it does:**
+
 - 🎨 Checks code formatting with Prettier
 - 🔍 Runs TypeScript type checking
 - 🔒 Performs npm security audit
 - 📦 Reviews dependencies (PRs only)
 
 **Benefits:**
+
 - Catches security vulnerabilities
 - Ensures consistent code formatting
 - Reviews dependencies for known issues
@@ -56,13 +66,16 @@ Created 4 automated workflows that run on every push and pull request:
 ---
 
 ### Workflow 3: Lighthouse CI (`.github/workflows/lighthouse.yml`)
+
 **Purpose:** Performance and SEO monitoring
 
 **Runs on:**
+
 - Every push to master/main
 - Every pull request
 
 **What it does:**
+
 - 🚀 Runs Google Lighthouse audits
 - 📊 Tests home, about, and contact pages
 - 📈 Requires 90% minimum score for:
@@ -73,6 +86,7 @@ Created 4 automated workflows that run on every push and pull request:
 - 🔗 Uploads reports for review
 
 **Benefits:**
+
 - Ensures excellent performance
 - Maintains high SEO scores
 - Catches accessibility issues
@@ -81,18 +95,22 @@ Created 4 automated workflows that run on every push and pull request:
 ---
 
 ### Workflow 4: PR Checks (`.github/workflows/pr-checks.yml`)
+
 **Purpose:** Automated PR validation and feedback
 
 **Runs on:**
+
 - Pull requests (opened, updated)
 
 **What it does:**
+
 - 💬 Comments on PR with build size
 - ✍️ Validates blog post frontmatter
 - 🔍 Detects new blog posts
 - 📏 Reports build information
 
 **Benefits:**
+
 - Immediate feedback on PRs
 - Ensures blog posts have required metadata
 - Tracks build size changes
@@ -112,6 +130,7 @@ Created 4 automated workflows that run on every push and pull request:
 ### After Merging to Master
 
 1. **Push your code:**
+
    ```bash
    git push origin master
    ```
@@ -130,6 +149,7 @@ Created 4 automated workflows that run on every push and pull request:
 ### For Pull Requests
 
 1. **Create a PR:**
+
    ```bash
    git push origin your-branch
    # Create PR on GitHub
@@ -184,15 +204,15 @@ Replace `YOUR_USERNAME` and `YOUR_REPO` with your actual GitHub username and rep
 
 ## What Gets Checked on Every Push
 
-| Check | Tool | Purpose |
-|-------|------|---------|
-| TypeScript | `astro check` | Type safety |
-| Build | `npm run build` | Build succeeds |
-| Formatting | Prettier | Code style |
-| Security | `npm audit` | Vulnerabilities |
-| Performance | Lighthouse | Speed & SEO |
-| Accessibility | Lighthouse | A11y compliance |
-| Dependencies | GitHub | Known issues |
+| Check         | Tool            | Purpose         |
+| ------------- | --------------- | --------------- |
+| TypeScript    | `astro check`   | Type safety     |
+| Build         | `npm run build` | Build succeeds  |
+| Formatting    | Prettier        | Code style      |
+| Security      | `npm audit`     | Vulnerabilities |
+| Performance   | Lighthouse      | Speed & SEO     |
+| Accessibility | Lighthouse      | A11y compliance |
+| Dependencies  | GitHub          | Known issues    |
 
 ---
 
@@ -220,12 +240,16 @@ Replace `YOUR_USERNAME` and `YOUR_REPO` with your actual GitHub username and rep
 ## Troubleshooting
 
 ### Issue: Workflow fails on first run
+
 **Solution:** Check the logs in the Actions tab. Common first-time issues:
+
 - Missing permissions (should auto-configure)
 - Node version mismatch (unlikely with current setup)
 
 ### Issue: Prettier fails
+
 **Solution:** Run locally and commit:
+
 ```bash
 npx prettier --write "src/**/*.{astro,ts,js,json,css,md}"
 git add .
@@ -233,7 +257,9 @@ git commit -m "Fix formatting"
 ```
 
 ### Issue: Lighthouse fails
+
 **Solution:**
+
 - Check the uploaded report in workflow artifacts
 - Look for specific recommendations
 - Most common: optimize images, add meta descriptions

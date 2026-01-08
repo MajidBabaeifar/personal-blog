@@ -3,47 +3,57 @@
 ## Session: 2026-01-08 (Part 3)
 **Branch:** claude/remove-blogs-write-first-fhxp8
 
-### Task: Remove Old Blogs and Keep Engineer Branding Guide as First Post
+### Task: Add All Blog Posts to Repository
 
-**Objective:** Clean up the blog by removing the initial two blog posts and keeping only the comprehensive engineer personal branding guide as the inaugural post.
+**Objective:** Ensure all three blog posts are present in the repository:
+- 10 Claude Tips from Anthropic
+- 10 Uncommon AI Applications
+- Engineer Personal Branding Secrets
 
 ### Changes Made:
 
-1. **Removed Blog Posts:**
-   - src/content/blog/10-claude-tips-from-anthropic.md (10,666 bytes)
-   - src/content/blog/uncommon-ai-applications-2025-2026.md (15,663 bytes)
+1. **Initial Change:** Removed old blog posts, kept only engineer branding guide
+2. **User Correction:** Requested restoration of all blog posts
+3. **Final State:** All three posts now active
 
-2. **Added Blog Post:**
-   - src/content/blog/engineer-personal-brand-secrets.md (new, 18,050 bytes)
-   - Comprehensive 6,500-word guide on building million-dollar personal brands
-   - Based on research of 50+ successful full-stack engineers
-   - 7 major patterns + actionable playbook
-   - 10+ sources properly cited with target="_blank"
+### Blog Posts:
+- ✅ src/content/blog/10-claude-tips-from-anthropic.md
+- ✅ src/content/blog/uncommon-ai-applications-2025-2026.md
+- ✅ src/content/blog/engineer-personal-brand-secrets.md
 
 ### Quality Checks:
-✅ Build successful (0 errors)
+✅ Build successful (6 pages built)
 ✅ Type check passed (0 errors, 0 warnings)
 ✅ Code formatted with Prettier
-
-### Files Modified:
-- src/content/blog/10-claude-tips-from-anthropic.md (deleted)
-- src/content/blog/uncommon-ai-applications-2025-2026.md (deleted)
-- src/content/blog/engineer-personal-brand-secrets.md (new)
-- .claude-sessions.log (new)
-
-### Commit:
-- Message: "Remove old blogs and add engineer branding guide as first post"
-- Files changed: 3 (400 insertions, 461 deletions)
 
 ### PR Link:
 https://github.com/MajidBabaeifar/personal-blog/pull/new/claude/remove-blogs-write-first-fhxp8
 
-### Update:
-User requested to restore the old blog posts. All three posts now active:
-- ✅ 10 Claude tips from Anthropic
-- ✅ 10 Uncommon AI Applications
-- ✅ Engineer Personal Branding Secrets
-
 ---
 
-_Previous sessions from other branches not shown in this log._
+## Session: 2026-01-08 (Part 2)
+**Branch:** claude/fix-blog-sources-fhxp8
+
+### Changes Made:
+1. Fixed blog sources section - converted markdown links to HTML with target="_blank"
+   - Both blog posts now have all source links opening in new tabs
+   - Added rel="noopener noreferrer" for security
+
+2. Created CLAUDE.md configuration file
+   - Branch naming conventions (feat/, fix/, docs/, etc.)
+   - Commit message guidelines (small, concise)
+   - Quality check requirements
+   - Writing style guidelines for blog posts
+
+3. Created this session log file for tracking changes
+
+### Files Modified:
+- src/content/blog/10-claude-tips-from-anthropic.md
+- src/content/blog/uncommon-ai-applications-2025-2026.md
+- CLAUDE.md (new)
+- .claude-sessions.log (new)
+
+### Notes:
+- User confirmed merge of previous PR
+- All source links in Sources sections now open in new tabs
+- Established workflow guidelines for future sessions
