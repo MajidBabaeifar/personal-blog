@@ -1,15 +1,69 @@
 ---
+import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
+
+// Get all blog posts and sort by date (newest first)
+const allPosts = await getCollection('blog', ({ data }) => {
+  return data.draft !== true;
+});
+
+const sortedPosts = allPosts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+// Format date helper
+function formatDate(date: Date): string {
+  return new Date(date).toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  });
+}
 ---
 
 <BaseLayout currentPage="home">
   <div class="max-w-3xl mx-auto px-6 py-12">
-    <section class="mb-8">
-      <h1 class="text-4xl font-bold mb-4">Welcome</h1>
+    <!-- Intro Section -->
+    <section class="mb-12">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">Welcome to My Blog</h1>
       <p class="text-xl text-[var(--color-text-light)] leading-relaxed">
-        Thanks for visiting my personal website. Feel free to check out the About page to learn more
-        about me, or reach out via the Contact page.
+        I write about software engineering, AI, web development, and lessons learned from building
+        scalable applications. Here are my latest posts:
       </p>
+    </section>
+
+    <!-- Blog Posts List -->
+    <section>
+      {
+        sortedPosts.length === 0 ? (
+          <p class="text-[var(--color-text-light)]">No posts yet. Check back soon!</p>
+        ) : (
+          <div class="space-y-8">
+            {sortedPosts.map((post) => (
+              <article class="group">
+                <a href={`/blog/${post.slug}`} class="block">
+                  <div class="flex flex-col gap-2">
+                    <h3 class="text-2xl font-bold group-hover:text-[var(--color-accent)] transition-colors">
+                      {post.data.title}
+                    </h3>
+                    <time class="text-sm text-[var(--color-text-light)]">
+                      {formatDate(post.data.pubDate)}
+                    </time>
+                    <p class="text-[var(--color-text-light)] mt-2">{post.data.description}</p>
+                    {post.data.tags && post.data.tags.length > 0 && (
+                      <div class="flex gap-2 mt-2">
+                        {post.data.tags.map((tag) => (
+                          <span class="text-xs px-2 py-1 bg-[var(--color-bg-secondary)] rounded">
+                            {tag}
+                          </span>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                </a>
+              </article>
+            ))}
+          </div>
+        )
+      }
     </section>
   </div>
 </BaseLayout>
