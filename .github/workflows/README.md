@@ -5,9 +5,11 @@ This directory contains GitHub Actions workflows that automatically run on every
 ## Workflows Overview
 
 ### 1. CI Pipeline (`ci.yml`)
+
 **Triggers:** Push and PR to `master`/`main`
 
 **What it does:**
+
 - ✅ Tests on multiple Node.js versions (18.x, 20.x)
 - ✅ Runs TypeScript type checking
 - ✅ Builds the project to ensure no build errors
@@ -18,9 +20,11 @@ This directory contains GitHub Actions workflows that automatically run on every
 ---
 
 ### 2. Code Quality (`code-quality.yml`)
+
 **Triggers:** Push and PR to `master`/`main`
 
 **What it does:**
+
 - 🎨 Checks code formatting with Prettier
 - 🔍 Runs TypeScript type checking
 - 🔒 Performs security audit on dependencies
@@ -31,9 +35,11 @@ This directory contains GitHub Actions workflows that automatically run on every
 ---
 
 ### 3. Lighthouse CI (`lighthouse.yml`)
+
 **Triggers:** Push and PR to `master`/`main`
 
 **What it does:**
+
 - 🚀 Runs Google Lighthouse performance audits
 - 📊 Tests Performance, Accessibility, Best Practices, and SEO
 - 📈 Requires minimum 90% score in all categories
@@ -44,9 +50,11 @@ This directory contains GitHub Actions workflows that automatically run on every
 ---
 
 ### 4. PR Checks (`pr-checks.yml`)
+
 **Triggers:** Pull requests (opened, updated)
 
 **What it does:**
+
 - 💬 Comments on PR with build information
 - 📏 Reports build size
 - ✍️ Validates blog post frontmatter (title, description, pubDate)
@@ -74,7 +82,9 @@ Add these to your README.md to show build status:
 ## Configuration Files
 
 ### `.lighthouserc.json`
+
 Configures Lighthouse CI thresholds:
+
 - Performance: 90%
 - Accessibility: 90%
 - Best Practices: 90%
@@ -106,24 +116,32 @@ You can adjust these thresholds if needed.
 ## Common Issues & Solutions
 
 ### Issue: Prettier check fails
+
 **Solution:** Run locally to fix formatting:
+
 ```bash
 npx prettier --write "src/**/*.{astro,ts,js,json,css,md}"
 ```
 
 ### Issue: TypeScript errors
+
 **Solution:** Run type check locally:
+
 ```bash
 npx astro check
 ```
 
 ### Issue: Lighthouse fails
+
 **Solution:**
+
 - Check the Lighthouse report in the workflow artifacts
 - Common issues: large images, missing meta tags, slow performance
 
 ### Issue: Security audit fails
+
 **Solution:** Update dependencies:
+
 ```bash
 npm audit fix
 ```
@@ -148,7 +166,7 @@ Edit `ci.yml` matrix:
 ```yaml
 strategy:
   matrix:
-    node-version: [18.x, 20.x, 22.x]  # Add more versions
+    node-version: [18.x, 20.x, 22.x] # Add more versions
 ```
 
 ### Adjust Lighthouse Thresholds
@@ -164,6 +182,7 @@ Edit `.lighthouserc.json`:
 ## Performance Optimization
 
 These workflows run in parallel to save time:
+
 - CI builds on multiple Node versions simultaneously
 - Code quality checks run independently
 - Lighthouse runs separately
@@ -175,6 +194,7 @@ Total runtime: ~2-3 minutes for all checks
 ## Cost
 
 All these workflows run on GitHub's free tier:
+
 - ✅ Unlimited for public repositories
 - ✅ 2,000 minutes/month for private repositories
 
@@ -185,12 +205,15 @@ Your blog workflows use ~3 minutes per push, so you can make hundreds of updates
 ## Monitoring
 
 ### View Workflow Runs
+
 1. Go to your repository on GitHub
 2. Click the **Actions** tab
 3. See all workflow runs, their status, and logs
 
 ### Get Notifications
+
 GitHub automatically sends notifications for:
+
 - ❌ Failed workflows
 - ✅ Fixed workflows (after a failure)
 

@@ -202,9 +202,9 @@ _Have you discovered other powerful Claude techniques? I'd love to hear about th
 
 ## Sources
 
-- [Alex Albert on X/Twitter](https://x.com/alexalbert__)
-- [Claude Documentation - Extended Thinking](https://docs.claude.com/en/docs/build-with-claude/extended-thinking)
-- [Claude Documentation - XML Tags](https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/use-xml-tags)
-- [Anthropic Engineering - Claude Code Best Practices](https://www.anthropic.com/engineering/claude-code-best-practices)
-- [Time - How Anthropic Uses Its Own Technology](https://time.com/charter/7296299/how-anthropic-uses-its-own-technology/)
-- [Claude AI Review 2025](https://max-productive.ai/ai-tools/claude/)
+- <a href="https://x.com/alexalbert__" target="_blank" rel="noopener noreferrer">Alex Albert on X/Twitter</a>
+- <a href="https://docs.claude.com/en/docs/build-with-claude/extended-thinking" target="_blank" rel="noopener noreferrer">Claude Documentation - Extended Thinking</a>
+- <a href="https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/use-xml-tags" target="_blank" rel="noopener noreferrer">Claude Documentation - XML Tags</a>
+- <a href="https://www.anthropic.com/engineering/claude-code-best-practices" target="_blank" rel="noopener noreferrer">Anthropic Engineering - Claude Code Best Practices</a>
+- <a href="https://time.com/charter/7296299/how-anthropic-uses-its-own-technology/" target="_blank" rel="noopener noreferrer">Time - How Anthropic Uses Its Own Technology</a>
+- <a href="https://max-productive.ai/ai-tools/claude/" target="_blank" rel="noopener noreferrer">Claude AI Review 2025</a>

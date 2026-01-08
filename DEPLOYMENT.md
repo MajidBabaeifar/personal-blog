@@ -54,16 +54,19 @@ git push -u origin master
 ### Option B: Using Vercel CLI
 
 1. Install Vercel CLI:
+
 ```bash
 npm install -g vercel
 ```
 
 2. Login to Vercel:
+
 ```bash
 vercel login
 ```
 
 3. Deploy:
+
 ```bash
 vercel
 ```
@@ -75,6 +78,7 @@ vercel
    - Want to override the settings? No
 
 5. For production deployment:
+
 ```bash
 vercel --prod
 ```
@@ -102,6 +106,7 @@ If you have a custom domain:
 After deployment, update these files:
 
 ### 1. Update astro.config.mjs
+
 ```javascript
 export default defineConfig({
   site: 'https://your-actual-domain.vercel.app', // or your custom domain
@@ -110,17 +115,20 @@ export default defineConfig({
 ```
 
 ### 2. Update public/robots.txt
+
 ```txt
 Sitemap: https://your-actual-domain.vercel.app/sitemap-index.xml
 ```
 
 ### 3. Verify SEO
+
 - Visit `your-domain.vercel.app/sitemap-index.xml` - should show sitemap
 - Visit `your-domain.vercel.app/rss.xml` - should show RSS feed
 - Check meta tags with browser dev tools
 - Test on [Google's Rich Results Test](https://search.google.com/test/rich-results)
 
 ### 4. Submit to Search Engines
+
 - [Google Search Console](https://search.google.com/search-console)
 - [Bing Webmaster Tools](https://www.bing.com/webmasters)
 
@@ -130,11 +138,13 @@ Vercel automatically deploys when you push to your main branch:
 
 1. Make changes to your blog
 2. Commit and push:
+
 ```bash
 git add .
 git commit -m "Add new blog post"
 git push
 ```
+
 3. Vercel automatically builds and deploys
 4. Check deployment status at [vercel.com/dashboard](https://vercel.com/dashboard)
 
@@ -143,23 +153,26 @@ git push
 To add a new post after deployment:
 
 1. Create a new markdown file in `src/content/blog/`:
+
 ```bash
 # Example: src/content/blog/my-new-post.md
 ```
 
 2. Add frontmatter and content:
+
 ```markdown
 ---
-title: "My New Post Title"
-description: "Brief description"
+title: 'My New Post Title'
+description: 'Brief description'
 pubDate: 2024-12-18
-tags: ["web-dev", "javascript"]
+tags: ['web-dev', 'javascript']
 ---
 
 Your content here...
 ```
 
 3. Commit and push:
+
 ```bash
 git add .
 git commit -m "Add new blog post: My New Post Title"
@@ -171,15 +184,18 @@ git push
 ## Troubleshooting
 
 ### Build Fails
+
 - Check build logs in Vercel dashboard
 - Test build locally: `npm run build`
 - Ensure all dependencies are in `package.json`
 
 ### 404 Errors
+
 - Ensure `dist` folder is set as output directory
 - Check that routes match your file structure
 
 ### Styles Not Loading
+
 - Clear Vercel cache and redeploy
 - Check Tailwind CSS is properly configured
 
@@ -208,6 +224,7 @@ If you need environment variables:
 ## Cost
 
 Vercel's Hobby (free) plan includes:
+
 - Unlimited deployments
 - Automatic HTTPS
 - 100GB bandwidth/month
