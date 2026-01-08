@@ -58,27 +58,33 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
   </head>
   <body>
     <div class="min-h-screen flex flex-col">
-      <header class="border-b border-[var(--color-border)] py-6">
-        <nav class="max-w-3xl mx-auto px-6">
+      <header class="border-b border-[var(--color-border)] backdrop-blur-sm bg-[var(--color-bg)]/80 sticky top-0 z-50">
+        <nav class="max-w-4xl mx-auto px-6 py-5">
           <div class="flex items-center justify-between">
-            <a href="/" class="hover:no-underline flex items-center">
-              <img src="/favicon.svg" alt="Majid Babaeifar" class="md:hidden h-8 w-8" />
-              <span class="hidden md:inline text-xl font-bold">Majid Babaeifar</span>
+            <a href="/" class="hover:no-underline flex items-center group">
+              <img
+                src="/favicon.svg"
+                alt="Majid Babaeifar"
+                class="md:hidden h-8 w-8 group-hover:scale-110 transition-transform"
+              />
+              <span class="hidden md:inline text-xl font-bold group-hover:text-[var(--color-accent)] transition-colors"
+                >Majid Babaeifar</span
+              >
             </a>
-            <div class="flex gap-6">
+            <div class="flex gap-8">
               <a
                 href="/"
-                class={`hover:text-[var(--color-accent)] ${currentPage === 'home' ? 'text-[var(--color-accent)] font-semibold' : ''}`}
+                class={`font-medium transition-all ${currentPage === 'home' ? 'text-[var(--color-accent)]' : 'text-[var(--color-text-light)] hover:text-[var(--color-accent)]'}`}
                 >Blog</a
               >
               <a
                 href="/about"
-                class={`hover:text-[var(--color-accent)] ${currentPage === 'about' ? 'text-[var(--color-accent)] font-semibold' : ''}`}
+                class={`font-medium transition-all ${currentPage === 'about' ? 'text-[var(--color-accent)]' : 'text-[var(--color-text-light)] hover:text-[var(--color-accent)]'}`}
                 >About</a
               >
               <a
                 href="/contact"
-                class={`hover:text-[var(--color-accent)] ${currentPage === 'contact' ? 'text-[var(--color-accent)] font-semibold' : ''}`}
+                class={`font-medium transition-all ${currentPage === 'contact' ? 'text-[var(--color-accent)]' : 'text-[var(--color-text-light)] hover:text-[var(--color-accent)]'}`}
                 >Contact</a
               >
             </div>
@@ -90,10 +96,10 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
         <slot />
       </main>
 
-      <footer class="border-t border-[var(--color-border)] py-8 mt-16">
-        <div class="max-w-3xl mx-auto px-6">
+      <footer class="border-t border-[var(--color-border)] py-12 mt-16 bg-[var(--color-bg-secondary)]">
+        <div class="max-w-4xl mx-auto px-6">
           <div
-            class="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-[var(--color-text-light)]"
+            class="flex flex-col md:flex-row justify-between items-center gap-6 text-sm text-[var(--color-text-light)]"
           >
             <p>&copy; {new Date().getFullYear()} Majid Babaeifar. All rights reserved.</p>
             <div class="flex gap-6">
@@ -101,16 +107,17 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
                 href="https://github.com/majidbabaeifar"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="hover:text-[var(--color-accent)]">GitHub</a
+                class="hover:text-[var(--color-accent)] transition-colors font-medium">GitHub</a
               >
               <a
                 href="https://linkedin.com/in/majidbabaeifar"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="hover:text-[var(--color-accent)]">LinkedIn</a
+                class="hover:text-[var(--color-accent)] transition-colors font-medium">LinkedIn</a
               >
-              <a href="mailto:majidbabaeifar@gmail.com" class="hover:text-[var(--color-accent)]"
-                >Email</a
+              <a
+                href="mailto:majidbabaeifar@gmail.com"
+                class="hover:text-[var(--color-accent)] transition-colors font-medium">Email</a
               >
             </div>
           </div>

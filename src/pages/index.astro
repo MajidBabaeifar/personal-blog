@@ -20,38 +20,104 @@ function formatDate(date: Date): string {
 ---
 
 <BaseLayout currentPage="home">
-  <div class="max-w-3xl mx-auto px-6 py-12">
-    <!-- Intro Section -->
-    <section class="mb-12">
-      <h1 class="text-4xl md:text-5xl font-bold mb-4">Welcome to My Blog</h1>
-      <p class="text-xl text-[var(--color-text-light)] leading-relaxed">
-        I write about software engineering, AI, web development, and lessons learned from building
-        scalable applications. Here are my latest posts:
-      </p>
+  <div class="max-w-4xl mx-auto px-6">
+    <!-- Hero Section -->
+    <section class="py-20 md:py-32 animate-fade-in">
+      <div class="max-w-3xl">
+        <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
+          Hi, I'm <span class="text-[var(--color-accent)]">Majid Babaeifar</span>
+        </h1>
+        <p class="text-xl md:text-2xl text-[var(--color-text-light)] leading-relaxed mb-8">
+          Full-stack software engineer building scalable applications that serve millions of users.
+          I write about software engineering, architecture, and lessons learned.
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a href="/about" class="btn-primary">
+            About Me
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M5 12h14"></path>
+              <path d="m12 5 7 7-7 7"></path>
+            </svg>
+          </a>
+          <a href="/contact" class="btn-outline">Get in Touch</a>
+        </div>
+
+        <!-- Quick Stats -->
+        <div class="grid grid-cols-3 gap-6 mt-12 pt-12 border-t border-[var(--color-border)]">
+          <div>
+            <div class="text-3xl font-bold text-[var(--color-accent)]">7+</div>
+            <div class="text-sm text-[var(--color-text-light)] mt-1">Years Experience</div>
+          </div>
+          <div>
+            <div class="text-3xl font-bold text-[var(--color-accent)]">30M+</div>
+            <div class="text-sm text-[var(--color-text-light)] mt-1">Users Served</div>
+          </div>
+          <div>
+            <div class="text-3xl font-bold text-[var(--color-accent)]">{sortedPosts.length}</div>
+            <div class="text-sm text-[var(--color-text-light)] mt-1">Articles</div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- Blog Posts List -->
-    <section>
+    <!-- Blog Posts Section -->
+    <section class="py-16">
+      <div class="flex items-center justify-between mb-8">
+        <h2 class="text-3xl font-bold">Recent Articles</h2>
+      </div>
+
       {
         sortedPosts.length === 0 ? (
-          <p class="text-[var(--color-text-light)]">No posts yet. Check back soon!</p>
+          <div class="card text-center py-12">
+            <p class="text-[var(--color-text-light)] text-lg">
+              No posts yet. Check back soon for articles on software engineering and web
+              development!
+            </p>
+          </div>
         ) : (
-          <div class="space-y-8">
-            {sortedPosts.map((post) => (
-              <article class="group">
+          <div class="grid gap-6">
+            {sortedPosts.map((post, index) => (
+              <article class="card group" style={`animation-delay: ${index * 0.1}s`}>
                 <a href={`/blog/${post.slug}`} class="block">
-                  <div class="flex flex-col gap-2">
-                    <h3 class="text-2xl font-bold group-hover:text-[var(--color-accent)] transition-colors">
-                      {post.data.title}
-                    </h3>
-                    <time class="text-sm text-[var(--color-text-light)]">
+                  <div class="flex flex-col gap-3">
+                    <div class="flex items-start justify-between gap-4">
+                      <h3 class="text-2xl font-bold group-hover:text-[var(--color-accent)] transition-colors flex-1">
+                        {post.data.title}
+                      </h3>
+                      <svg
+                        class="w-5 h-5 text-[var(--color-text-lighter)] group-hover:text-[var(--color-accent)] group-hover:translate-x-1 transition-all flex-shrink-0 mt-2"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path d="M5 12h14"></path>
+                        <path d="m12 5 7 7-7 7"></path>
+                      </svg>
+                    </div>
+                    <time class="text-sm text-[var(--color-text-lighter)] font-medium">
                       {formatDate(post.data.pubDate)}
                     </time>
-                    <p class="text-[var(--color-text-light)] mt-2">{post.data.description}</p>
+                    <p class="text-[var(--color-text-light)] leading-relaxed">
+                      {post.data.description}
+                    </p>
                     {post.data.tags && post.data.tags.length > 0 && (
-                      <div class="flex gap-2 mt-2">
+                      <div class="flex flex-wrap gap-2 mt-2">
                         {post.data.tags.map((tag) => (
-                          <span class="text-xs px-2 py-1 bg-[var(--color-bg-secondary)] rounded">
+                          <span class="text-xs px-3 py-1 bg-[var(--color-bg-secondary)] text-[var(--color-text-light)] rounded-full font-medium border border-[var(--color-border)]">
                             {tag}
                           </span>
                         ))}
