@@ -2,15 +2,17 @@
 
 ## Branch Naming
 
-Use semantic branch prefixes based on change type:
+Use semantic branch prefixes with `claude/` prefix and session ID suffix:
 
-- `feat/` - New features or additions
-- `fix/` - Bug fixes or corrections
-- `docs/` - Documentation updates
-- `refactor/` - Code refactoring
-- `style/` - UI/styling changes
+- `claude/feat-<description>-<session-id>` - New features or additions
+- `claude/fix-<description>-<session-id>` - Bug fixes or corrections
+- `claude/docs-<description>-<session-id>` - Documentation updates
+- `claude/refactor-<description>-<session-id>` - Code refactoring
+- `claude/style-<description>-<session-id>` - UI/styling changes
 
-Examples: `feat/dark-mode`, `fix/mobile-nav`, `docs/readme-update`
+Examples: `claude/feat-dark-mode-abc123`, `claude/fix-mobile-nav-xyz789`
+
+**Important:** Branch names MUST start with `claude/` and end with session ID for push to succeed.
 
 ## Commit Messages
 
