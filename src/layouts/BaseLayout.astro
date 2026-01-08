@@ -6,13 +6,15 @@ interface Props {
   description?: string;
   image?: string;
   article?: boolean;
+  currentPage?: 'home' | 'about' | 'contact';
 }
 
 const {
   title = 'Majid Babaeifar - Full Stack Software Engineer',
   description = 'Personal blog of Majid Babaeifar, a full-stack software engineer with 7+ years of experience building scalable applications.',
   image = '/og-image.jpg',
-  article = false
+  article = false,
+  currentPage = 'home'
 } = Astro.props;
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
@@ -57,9 +59,9 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
         <div class="flex items-center justify-between">
           <a href="/" class="text-xl font-bold hover:no-underline">Majid Babaeifar</a>
           <div class="flex gap-6">
-            <a href="/" class="hover:text-[var(--color-accent)]">Home</a>
-            <a href="/about" class="hover:text-[var(--color-accent)]">About</a>
-            <a href="/contact" class="hover:text-[var(--color-accent)]">Contact</a>
+            <a href="/" class={`hover:text-[var(--color-accent)] ${currentPage === 'home' ? 'text-[var(--color-accent)] font-semibold' : ''}`}>Home</a>
+            <a href="/about" class={`hover:text-[var(--color-accent)] ${currentPage === 'about' ? 'text-[var(--color-accent)] font-semibold' : ''}`}>About</a>
+            <a href="/contact" class={`hover:text-[var(--color-accent)] ${currentPage === 'contact' ? 'text-[var(--color-accent)] font-semibold' : ''}`}>Contact</a>
           </div>
         </div>
       </nav>
