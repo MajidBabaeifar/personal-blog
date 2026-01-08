@@ -1,11 +1,9 @@
 ---
 title: "10 Game-Changing Claude Tips from Anthropic's Alex Albert"
 description: "Learn the best practices for using Claude AI from Alex Albert, Anthropic's Head of Developer Relations. Discover powerful techniques including XML tags, extended thinking, multi-agent systems, and more."
-pubDate: 2026-01-08
+pubDate: 2026-01-08T10:00:00
 tags: ['AI', 'Claude', 'productivity', 'tips']
 ---
-
-# 10 Game-Changing Claude Tips from Anthropic's Alex Albert
 
 If you're using Claude AI, you might be leaving serious capabilities on the table. [Alex Albert](https://x.com/alexalbert__), Anthropic's Head of Developer Relations, has been sharing invaluable insights on how to get the most out of Claude. Here are 10 powerful tips that will transform how you work with AI.
 
@@ -31,7 +29,7 @@ Write a Python function to calculate fibonacci numbers
 
 Combining XML tags with techniques like few-shot examples (`<examples>`) or chain of thought (`<thinking>`, `<answer>`) creates super-structured, high-performance prompts.
 
-[Source: Claude Documentation on XML Tags](https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/use-xml-tags)
+<a href="https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/use-xml-tags" target="_blank" rel="noopener noreferrer">Source: Claude Documentation on XML Tags</a>
 
 ## 2. Unlock Extended Thinking for Complex Tasks
 
@@ -45,7 +43,7 @@ Each level allocates progressively more thinking budget. Start at the minimum (1
 
 **Best for:** Math, coding, complex analysis, and any task requiring step-by-step reasoning.
 
-[Source: Claude Extended Thinking Documentation](https://docs.claude.com/en/docs/build-with-claude/extended-thinking)
+<a href="https://docs.claude.com/en/docs/build-with-claude/extended-thinking" target="_blank" rel="noopener noreferrer">Source: Claude Extended Thinking Documentation</a>
 
 ## 3. Leverage Project Knowledge for Context
 
@@ -60,7 +58,7 @@ Upload documents to Claude Projects to create persistent knowledge that Claude c
 - Research papers or technical specs
 - Previous conversation summaries
 
-[Source: Claude Best Practices](https://www.anthropic.com/engineering/claude-code-best-practices)
+<a href="https://www.anthropic.com/engineering/claude-code-best-practices" target="_blank" rel="noopener noreferrer">Source: Claude Best Practices</a>
 
 ## 4. Command an Army: Multi-Agent Claude Code
 
@@ -75,7 +73,7 @@ Alex Albert noted that using Git worktrees to run multiple Claude Code instances
 
 **The result:** Tackle different features, bugs, or refactors in parallel, dramatically speeding up development.
 
-[Source: Alex Albert on X](https://x.com/alexalbert__/status/1979577547575951616)
+<a href="https://x.com/alexalbert__/status/1979577547575951616" target="_blank" rel="noopener noreferrer">Source: Alex Albert on X</a>
 
 ## 5. Start with the Best, Then Optimize
 
@@ -90,7 +88,7 @@ When selecting which Claude model to use, Alex Albert recommends a specific fram
 - Then you can cost-optimize by testing cheaper models
 - Prevents the trap of thinking a task is impossible when you just need better prompts
 
-[Source: Alex Albert on Model Selection](https://x.com/alexalbert__/status/1775588774518665613)
+<a href="https://x.com/alexalbert__/status/1775588774518665613" target="_blank" rel="noopener noreferrer">Source: Alex Albert on Model Selection</a>
 
 ## 6. Master Artifacts for Interactive Content
 
@@ -105,7 +103,7 @@ Artifacts are specialized containers for significant content you might want to r
 
 **Alex Albert's discovery:** Using the canvas-design skill, Claude created PDF visuals entirely through code—"I had no clue this was possible before."
 
-[Source: Claude Artifacts Best Practices](https://max-productive.ai/ai-tools/claude/)
+<a href="https://max-productive.ai/ai-tools/claude/" target="_blank" rel="noopener noreferrer">Source: Claude Artifacts Best Practices</a>
 
 ## 7. Research and Plan Before Coding
 
@@ -123,7 +121,7 @@ Before writing code, please:
 
 **Internal benchmarks show:** This approach significantly improves code quality and reduces bugs.
 
-[Source: Claude Code Best Practices](https://www.anthropic.com/engineering/claude-code-best-practices)
+<a href="https://www.anthropic.com/engineering/claude-code-best-practices" target="_blank" rel="noopener noreferrer">Source: Claude Code Best Practices</a>
 
 ## 8. Use /clear to Manage Context Window
 
@@ -140,7 +138,7 @@ During long sessions, Claude's context window can fill with irrelevant conversat
 
 This simple habit maintains peak performance throughout your session.
 
-[Source: Claude AI Review 2025](https://max-productive.ai/ai-tools/claude/)
+<a href="https://max-productive.ai/ai-tools/claude/" target="_blank" rel="noopener noreferrer">Source: Claude AI Review 2025</a>
 
 ## 9. Configure Projects with CLAUDE.md
 
@@ -156,7 +154,7 @@ Claude Code automatically checks for a `CLAUDE.md` file in your project's root d
 
 **Best practice:** Keep these files concise and human-readable. Think of it as onboarding documentation that both humans and Claude can use.
 
-[Source: Anthropic Engineering Blog](https://www.anthropic.com/engineering/claude-code-best-practices)
+<a href="https://www.anthropic.com/engineering/claude-code-best-practices" target="_blank" rel="noopener noreferrer">Source: Anthropic Engineering Blog</a>
 
 ## 10. Unlock Interleaved Thinking for Agents
 
@@ -172,7 +170,7 @@ Claude 4 models support interleaved thinking, enabling Claude to think between t
 
 **Alex Albert on multi-agent systems:** "Multi-agent systems are the next frontier of AI applications. We've found they beat single agents by up to 90%+ on some complex tasks."
 
-[Source: Claude Extended Thinking Features](https://docs.claude.com/en/docs/build-with-claude/extended-thinking)
+<a href="https://docs.claude.com/en/docs/build-with-claude/extended-thinking" target="_blank" rel="noopener noreferrer">Source: Claude Extended Thinking Features</a>
 
 ## Bonus: How Alex Albert Uses Claude Daily
 
@@ -184,7 +182,7 @@ Alex shared how Anthropic employees use Claude:
 
 The key insight? The team building Claude uses it extensively for their own work—that's how you know it's powerful.
 
-[Source: Time Interview with Alex Albert](https://time.com/charter/7296299/how-anthropic-uses-its-own-technology/)
+<a href="https://time.com/charter/7296299/how-anthropic-uses-its-own-technology/" target="_blank" rel="noopener noreferrer">Source: Time Interview with Alex Albert</a>
 
 ## Conclusion
 
