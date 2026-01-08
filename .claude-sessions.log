@@ -1,6 +1,37 @@
 # Claude Code Sessions Log
 
-## Session: 2026-01-08
+## Session: 2026-01-08 (Part 3)
+**Branch:** claude/remove-blogs-write-first-fhxp8
+
+### Task: Add All Blog Posts to Repository
+
+**Objective:** Ensure all three blog posts are present in the repository:
+- 10 Claude Tips from Anthropic
+- 10 Uncommon AI Applications
+- Engineer Personal Branding Secrets
+
+### Changes Made:
+
+1. **Initial Change:** Removed old blog posts, kept only engineer branding guide
+2. **User Correction:** Requested restoration of all blog posts
+3. **Final State:** All three posts now active
+
+### Blog Posts:
+- ✅ src/content/blog/10-claude-tips-from-anthropic.md
+- ✅ src/content/blog/uncommon-ai-applications-2025-2026.md
+- ✅ src/content/blog/engineer-personal-brand-secrets.md
+
+### Quality Checks:
+✅ Build successful (6 pages built)
+✅ Type check passed (0 errors, 0 warnings)
+✅ Code formatted with Prettier
+
+### PR Link:
+https://github.com/MajidBabaeifar/personal-blog/pull/new/claude/remove-blogs-write-first-fhxp8
+
+---
+
+## Session: 2026-01-08 (Part 2)
 **Branch:** claude/fix-blog-sources-fhxp8
 
 ### Changes Made:
