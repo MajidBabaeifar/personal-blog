@@ -239,13 +239,13 @@ _What uncommon AI applications are you most excited about? Have you encountered 
 
 ## Sources
 
-- [Dezeen - Eight Actually Interesting Uses of AI from 2025](https://www.dezeen.com/2025/12/29/top-ai-projects-2025/)
-- [Rest of World - Innovative Ways the World Used AI in 2025](https://restofworld.org/2025/ai-innovation-global-2025/)
-- [Google - 2025 Research Breakthroughs](https://blog.google/technology/ai/2025-research-breakthroughs/)
-- [Medium - Top AI Breakthroughs of 2025](https://medium.com/@creatix/top-ai-breakthroughs-of-2025-and-whats-on-tap-for-2026-603cc64612e2)
-- [Farmonaut - AI in Agriculture 2026](https://farmonaut.com/precision-farming/ai-in-agriculture-new-food-innovations-for-2026/)
-- [StartUs Insights - AI in Agriculture Strategic Guide](https://www.startus-insights.com/innovators-guide/ai-in-agriculture-strategic-guide/)
-- [Crescendo AI - Latest AI News](https://www.crescendo.ai/news/latest-ai-news-and-updates)
-- [Speechise - Voice Cloning in 2025](https://www.speechise.com/blog/posts/voice-cloining-2025/)
-- [InfoWorld - 6 AI Breakthroughs That Will Define 2026](https://www.infoworld.com/article/4108092/6-ai-breakthroughs-that-will-define-2026.html)
-- [MIT Technology Review - What's Next for AI in 2026](https://www.technologyreview.com/2026/01/05/1130662/whats-next-for-ai-in-2026/)
+- <a href="https://www.dezeen.com/2025/12/29/top-ai-projects-2025/" target="_blank" rel="noopener noreferrer">Dezeen - Eight Actually Interesting Uses of AI from 2025</a>
+- <a href="https://restofworld.org/2025/ai-innovation-global-2025/" target="_blank" rel="noopener noreferrer">Rest of World - Innovative Ways the World Used AI in 2025</a>
+- <a href="https://blog.google/technology/ai/2025-research-breakthroughs/" target="_blank" rel="noopener noreferrer">Google - 2025 Research Breakthroughs</a>
+- <a href="https://medium.com/@creatix/top-ai-breakthroughs-of-2025-and-whats-on-tap-for-2026-603cc64612e2" target="_blank" rel="noopener noreferrer">Medium - Top AI Breakthroughs of 2025</a>
+- <a href="https://farmonaut.com/precision-farming/ai-in-agriculture-new-food-innovations-for-2026/" target="_blank" rel="noopener noreferrer">Farmonaut - AI in Agriculture 2026</a>
+- <a href="https://www.startus-insights.com/innovators-guide/ai-in-agriculture-strategic-guide/" target="_blank" rel="noopener noreferrer">StartUs Insights - AI in Agriculture Strategic Guide</a>
+- <a href="https://www.crescendo.ai/news/latest-ai-news-and-updates" target="_blank" rel="noopener noreferrer">Crescendo AI - Latest AI News</a>
+- <a href="https://www.speechise.com/blog/posts/voice-cloining-2025/" target="_blank" rel="noopener noreferrer">Speechise - Voice Cloning in 2025</a>
+- <a href="https://www.infoworld.com/article/4108092/6-ai-breakthroughs-that-will-define-2026.html" target="_blank" rel="noopener noreferrer">InfoWorld - 6 AI Breakthroughs That Will Define 2026</a>
+- <a href="https://www.technologyreview.com/2026/01/05/1130662/whats-next-for-ai-in-2026/" target="_blank" rel="noopener noreferrer">MIT Technology Review - What's Next for AI in 2026</a>

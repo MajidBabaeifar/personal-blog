@@ -1,0 +1,28 @@
+# Claude Code Sessions Log
+
+## Session: 2026-01-08
+**Branch:** claude/fix-blog-sources-fhxp8
+
+### Changes Made:
+1. Fixed blog sources section - converted markdown links to HTML with target="_blank"
+   - Both blog posts now have all source links opening in new tabs
+   - Added rel="noopener noreferrer" for security
+
+2. Created CLAUDE.md configuration file
+   - Branch naming conventions (feat/, fix/, docs/, etc.)
+   - Commit message guidelines (small, concise)
+   - Quality check requirements
+   - Writing style guidelines for blog posts
+
+3. Created this session log file for tracking changes
+
+### Files Modified:
+- src/content/blog/10-claude-tips-from-anthropic.md
+- src/content/blog/uncommon-ai-applications-2025-2026.md
+- CLAUDE.md (new)
+- .claude-sessions.log (new)
+
+### Notes:
+- User confirmed merge of previous PR
+- All source links in Sources sections now open in new tabs
+- Established workflow guidelines for future sessions
