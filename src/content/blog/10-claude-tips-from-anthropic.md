@@ -121,6 +121,8 @@ Before writing code, please:
 
 **Internal benchmarks show:** This approach significantly improves code quality and reduces bugs.
 
+*Curious about how AI is transforming software development? Read my analysis on [the future of software engineering with AI](/blog/ai-powered-software-engineering-future).*
+
 <a href="https://www.anthropic.com/engineering/claude-code-best-practices" target="_blank" rel="noopener noreferrer">Source: Claude Code Best Practices</a>
 
 ## 8. Use /clear to Manage Context Window
