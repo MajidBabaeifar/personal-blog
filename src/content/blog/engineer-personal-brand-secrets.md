@@ -137,6 +137,8 @@ Top engineers are writing about:
 4. **Platform Engineering** - Internal developer platforms
 5. **GEO (Generative Engine Optimization)** - The new SEO for AI era
 
+*Explore some [uncommon AI applications that are shaping 2025-2026](/blog/uncommon-ai-applications-2025-2026) for content inspiration.*
+
 **Critical insight:** Organic click-through rates declined by **61%** when AI-generated summaries appeared in search results. Engineers are pivoting to Generative Engine Optimization.
 
 <a href="https://www.searchenginejournal.com/key-enterprise-seo-and-ai-trends-for-2026/558508/" target="_blank" rel="noopener noreferrer">Source: Search Engine Journal - AI Trends for 2026</a>
@@ -213,6 +215,8 @@ The highest earners don't rely on one source. Here's the pattern:
 - SaaS boilerplates: **$199-599** one-time or subscription
 - Code templates and courses
 - Can add **30%+** to total revenue
+
+*With AI tools, building products as a solo founder is more accessible than ever. Learn more in my post on [one-person startups with AI](/blog/one-person-startup-ai-revolution).*
 
 **Tier 4: Content Monetization**
 
