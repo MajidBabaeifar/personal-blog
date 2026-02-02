@@ -81,3 +81,59 @@ https://github.com/MajidBabaeifar/personal-blog/pull/new/claude/remove-blogs-wri
 
 ### PR Link:
 https://github.com/MajidBabaeifar/personal-blog/pull/new/claude/create-ai-blog-9XSnZ
+
+---
+
+## Session: 2026-02-02
+**Branch:** copilot/create-notion-ai-blog
+
+### Task: Create Blog Post About Using Notion AI for Idea Management and Research
+
+**Objective:** Write a comprehensive, practical guide on using Notion AI to capture, organize, research, and develop ideas.
+
+### Changes Made:
+
+1. **New Blog Post Created:**
+   - src/content/blog/notion-ai-idea-management-research.md
+   - Comprehensive guide covering:
+     - Why Notion AI is ideal for idea management
+     - 5-phase workflow system (Capture, Research, Develop, Connect, Create)
+     - Advanced techniques and power-user tips
+     - Real-world examples and case studies
+     - Best practices and common pitfalls
+     - ROI analysis and getting started guide
+   - Tags: AI, productivity, Notion, research, knowledge management
+   - Well-researched with 8 authoritative sources
+
+### Content Structure:
+- Introduction (problem statement and solution)
+- Why Notion AI for idea management
+- Complete 5-phase system implementation
+- Advanced techniques for research
+- Real-world workflow example
+- Best practices and dos/don'ts
+- Common pitfalls to avoid
+- Economics and ROI breakdown
+- Week-by-week getting started guide
+- Future predictions
+- Conclusion and call-to-action
+- Sources section
+
+### Quality Checks:
+✅ Build successful (11 pages built)
+✅ Type check passed (0 errors, 0 warnings)
+✅ Code formatted with Prettier
+✅ Blog post renders correctly on dev server
+✅ Includes proper SEO meta tags and frontmatter
+
+### Writing Style:
+✅ Conversational and human-like
+✅ Clear and accessible
+✅ Well-researched with proper citations
+✅ Engaging without being overly technical
+✅ SEO-friendly with proper headings and structure
+✅ Includes practical, actionable advice
+✅ Real-world examples and workflows
+
+### PR Link:
+https://github.com/MajidBabaeifar/personal-blog/pull/new/copilot/create-notion-ai-blog
